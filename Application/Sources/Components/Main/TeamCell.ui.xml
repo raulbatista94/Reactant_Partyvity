@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Component
+    xmlns="http://schema.reactant.tech/ui"
+    xmlns:layout="http://schema.reactant.tech/layout"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schema.reactant.tech/ui https://schema.reactant.tech/ui.xsd
+    http://schema.reactant.tech/layout https://schema.reactant.tech/layout.xsd">
+
+    <Label
+        field="icon"
+        font=":bold@40"
+        clipsToBounds="true"
+        layout:leading="super inset(11)"
+        layout:centerY="super" />
+
+    <Label
+        field="name"
+        font=":bold@26"
+        textColor="#2952a3"
+        numberOfLines="1"
+        layout:leading="icon offset(55)"
+        layout:top="super inset(8)" />
+
+    <Label
+      field="score"
+      layout:leading="icon offset(55)"
+      layout:below="name offset(4)"
+      layout:bottom="super inset(6)" />
+
+    <Label
+      field="round"
+      layout:leading="score offset(80)"
+      layout:trailing=":lt super"
+      layout:top="score"
+      layout:bottom="score" />
+
+</Component>

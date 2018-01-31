@@ -1,0 +1,104 @@
+PODS:
+  - Alamofire (4.6.0)
+  - DataMapper (0.2.0):
+    - DataMapper/Core (= 0.2.0)
+    - DataMapper/JsonSerializer (= 0.2.0)
+  - DataMapper/Core (0.2.0)
+  - DataMapper/JsonSerializer (0.2.0):
+    - DataMapper/Core
+  - Differentiator (3.0.2)
+  - Fetcher (0.2.0):
+    - Fetcher/AlamofireRequestPerformer (= 0.2.0)
+    - Fetcher/Core (= 0.2.0)
+  - Fetcher/AlamofireRequestPerformer (0.2.0):
+    - Alamofire (~> 4.3)
+    - Fetcher/Core
+  - Fetcher/Core (0.2.0):
+    - DataMapper (~> 0.2)
+    - Result (~> 3.2)
+  - Reactant (1.1.0):
+    - Reactant/Core (= 1.1.0)
+    - Reactant/Result (= 1.1.0)
+  - Reactant/Configuration (1.1.0):
+    - RxSwift (~> 4.0)
+    - SnapKit (~> 4.0)
+  - Reactant/Core (1.1.0):
+    - Reactant/Configuration
+    - RxCocoa (~> 4.0)
+    - RxOptional (~> 3.0)
+    - RxSwift (~> 4.0)
+    - SnapKit (~> 4.0)
+  - Reactant/FallbackSafeAreaInsets (1.1.0):
+    - Reactant/Core
+  - Reactant/Result (1.1.0):
+    - Result (~> 3.0)
+    - RxOptional (~> 3.0)
+    - RxSwift (~> 4.0)
+  - Reactant/TableView (1.1.0):
+    - Reactant/Core
+    - RxCocoa (~> 4.0)
+    - RxDataSources (~> 3.0)
+  - ReactantLiveUI (0.2.0):
+    - Reactant (> 1.0)
+    - Reactant/FallbackSafeAreaInsets (> 1.0)
+    - Reactant/TableView (> 1.0)
+    - RxCocoa
+  - ReactantUI (0.2.0)
+  - Realm (2.10.2):
+    - Realm/Headers (= 2.10.2)
+  - Realm/Headers (2.10.2)
+  - RealmSwift (2.10.2):
+    - Realm (= 2.10.2)
+  - Result (3.2.4)
+  - RxCocoa (4.1.1):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxOptional (3.3.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.1)
+  - SnapKit (4.0.0)
+  - TorchORM (0.3.0):
+    - RealmSwift (~> 2.0)
+
+DEPENDENCIES:
+  - Fetcher
+  - Reactant (~> 1.0)
+  - ReactantLiveUI
+  - ReactantUI
+  - TorchORM (from `https://github.com/SwiftKit/Torch.git`, branch `swift-pm`)
+
+EXTERNAL SOURCES:
+  TorchORM:
+    :branch: swift-pm
+    :git: https://github.com/SwiftKit/Torch.git
+
+CHECKOUT OPTIONS:
+  TorchORM:
+    :commit: 6f274cbef67e02adcb0ebbf0414a346f1d1d693a
+    :git: https://github.com/SwiftKit/Torch.git
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  DataMapper: f33d650f587a3241216763ee6377e3c3f1041c47
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  Fetcher: d09e86cb5c3d3f3c5a7f06d1f41b852d3fe3fdf0
+  Reactant: 1910427bc0b05afeeb4e959e24bdd768dedb5258
+  ReactantLiveUI: 6d6d8b2aaebcf00aec456b9b948333f9e0a896e9
+  ReactantUI: 6d209cf3e780f0f0efd0b2c7424f59992e759320
+  Realm: 0ef72b837fb67e9f4b098bac771ddd72c7fdbb69
+  RealmSwift: 07a9ae0505091eda6b2ee7c190c3786d6e90a7b0
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxCocoa: fd0862fd2df95fa55562ad28ffd2522c25eb4a85
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxOptional: e5448d3e21024489e07c31f6a262f2b50c975367
+  RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  TorchORM: 5a3caf34b1915a25886dd15771f610991e758eb4
+
+PODFILE CHECKSUM: 7572e2084a6229fd787cc2dd8cd09c83d26e4284
+
+COCOAPODS: 1.4.0

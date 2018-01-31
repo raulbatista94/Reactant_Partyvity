@@ -1,0 +1,362 @@
+[
+  {
+    "word": "Elephant",
+    "points": 3
+  },
+  {
+    "word": "Turtle",
+    "points": 4
+  },
+  {
+    "word": "Car",
+    "points": 4
+  },
+  {
+    "word": "Sound",
+    "points": 4
+  },
+  {
+    "word": "Piano",
+    "points": 5
+  },
+  {
+    "word": "Diamond",
+    "points": 4
+  },
+  {
+    "word": "Poop",
+    "points": 3
+  },
+  {
+    "word": "Fly(Animal)",
+    "points": 5
+  },
+  {
+    "word": "Dragon",
+    "points": 3
+  },
+  {
+    "word": "Mouse",
+    "points": 5
+  },
+  {
+    "word": "Horse",
+    "points": 3
+  },
+  {
+    "word": "Bee",
+    "points": 3
+  },
+  {
+    "word": "Baker",
+    "points": 5
+  },
+  {
+    "word": "Tail",
+    "points": 4
+  },
+  {
+    "word": "Playstation",
+    "points": 3
+  },
+  {
+    "word": "Disc",
+    "points": 4
+  },
+  {
+    "word": "Tape",
+    "points": 4
+  },
+  {
+    "word": "Web",
+    "points": 4
+  },
+  {
+    "word": "Web-Designer",
+    "points": 5
+  },
+  {
+    "word": "Armor",
+    "points": 3
+  },
+  {
+    "word": "Nature",
+    "points": 4
+  },
+  {
+    "word": "Box",
+    "points": 3
+  },
+  {
+    "word": "Chicken",
+    "points": 4
+  },
+  {
+    "word": "Bra",
+    "points": 4
+  },
+  {
+    "word": "Butter",
+    "points": 4
+  },
+  {
+    "word": "Butterfly",
+    "points": 3
+  },
+  {
+    "word": "Baby",
+    "points": 3
+  },
+  {
+    "word": "Mother",
+    "points": 5
+  },
+  {
+    "word": "Juice",
+    "points": 5
+  },
+  {
+    "word": "Tequila",
+    "points": 4
+  },
+  {
+    "word": "Brother",
+    "points": 3
+  },
+  {
+    "word": "Keyboard",
+    "points": 4
+  },
+  {
+    "word": "Processor",
+    "points": 5
+  },
+  {
+    "word": "Nurse",
+    "points": 3
+  },
+  {
+    "word": "Injection",
+    "points": 5
+  },
+  {
+    "word": "Blood",
+    "points": 5
+  },
+  {
+    "word": "Vampire",
+    "points": 3
+  },
+  {
+    "word": "Kiss",
+    "points": 5
+  },
+  {
+    "word": "Ninja",
+    "points": 5
+  },
+  {
+    "word": "Sea",
+    "points": 4
+  },
+  {
+    "word": "Sun",
+    "points": 4
+  },
+  {
+    "word": "Moon",
+    "points": 4
+  },
+  {
+    "word": "Wood",
+    "points": 5
+  },
+  {
+    "word": "Weed",
+    "points": 5
+  },
+  {
+    "word": "Cigaret",
+    "points": 3
+  },
+  {
+    "word": "Pokemon",
+    "points": 5
+  },
+  {
+    "word": "Mobile",
+    "points": 3
+  },
+  {
+    "word": "Network",
+    "points": 3
+  },
+  {
+    "word": "Transmiter",
+    "points": 3
+  },
+  {
+    "word": "Drugs",
+    "points": 3
+  },
+  {
+    "word": "Medicine",
+    "points": 4
+  },
+  {
+    "word": "Pen",
+    "points": 3
+  },
+  {
+    "word": "Condom",
+    "points": 3
+  },
+  {
+    "word": "Dollar",
+    "points": 4
+  },
+  {
+    "word": "Euro",
+    "points": 3
+  },
+  {
+    "word": "Database",
+    "points": 4
+  },
+  {
+    "word": "Water",
+    "points": 3
+  },
+  {
+    "word": "Oxygen",
+    "points": 5
+  },
+  {
+    "word": "Supply",
+    "points": 3
+  },
+  {
+    "word": "Electricity",
+    "points": 4
+  },
+  {
+    "word": "Town",
+    "points": 5
+  },
+  {
+    "word": "Knife",
+    "points": 4
+  },
+  {
+    "word": "Spoon",
+    "points": 4
+  },
+  {
+    "word": "Drunk father",
+    "points": 3
+  },
+  {
+    "word": "University",
+    "points": 5
+  },
+  {
+    "word": "Tortilla",
+    "points": 5
+  },
+  {
+    "word": "Tacos",
+    "points": 4
+  },
+  {
+    "word": "Gyros",
+    "points": 5
+  },
+  {
+    "word": "Spinning",
+    "points": 3
+  },
+  {
+    "word": "Bicycle",
+    "points": 3
+  },
+  {
+    "word": "Bottle",
+    "points": 3
+  },
+  {
+    "word": "Paper",
+    "points": 5
+  },
+  {
+    "word": "Lamp",
+    "points": 3
+  },
+  {
+    "word": "Light",
+    "points": 5
+  },
+  {
+    "word": "Sky",
+    "points": 3
+  },
+  {
+    "word": "Cloud",
+    "points": 5
+  },
+  {
+    "word": "USB Flash Drive",
+    "points": 4
+  },
+  {
+    "word": "Car crash",
+    "points": 3
+  },
+  {
+    "word": "Plane fall",
+    "points": 5
+  },
+  {
+    "word": "Heart attack",
+    "points": 4
+  },
+  {
+    "word": "God",
+    "points": 5
+  },
+  {
+    "word": "Flower",
+    "points": 3
+  },
+  {
+    "word": "Frozen human",
+    "points": 5
+  },
+  {
+    "word": "Broken screen",
+    "points": 4
+  },
+  {
+    "word": "Globalization",
+    "points": 5
+  },
+  {
+    "word": "Suicide Mission",
+    "points": 3
+  },
+  {
+    "word": "James Bond",
+    "points": 3
+  },
+  {
+    "word": "Harry Potter",
+    "points": 4
+  },
+  {
+    "word": "Griffindor",
+    "points": 5
+  },
+  {
+    "word": "Invisible problem",
+    "points": 4
+  }
+]

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Component
+    xmlns="http://schema.reactant.tech/ui"
+    xmlns:layout="http://schema.reactant.tech/layout"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schema.reactant.tech/ui https://schema.reactant.tech/ui.xsd
+    http://schema.reactant.tech/layout https://schema.reactant.tech/layout.xsd">
+
+
+    <styles>
+        <ButtonStyle
+            name="BlueButton"
+            layer.cornerRadius="5"
+            clipsToBounds="true"
+            backgroundColor="darkGray"
+            />
+    </styles>
+
+    <View
+        backgroundColor="#e6e6e6"
+        layout:height="1"
+        layout:fillHorizontally="super"
+        layout:bottom="super" />
+
+    <Label
+        field="name"
+        font=":bold@30"
+        textColor="black"
+        layout:top="super offset(8)"
+        layout:centerX="super"
+        />
+    <Label
+        field="actualActivity"
+        textColor="black"
+        font=":bold@28"
+        layout:centerX="super"
+        layout:below="name offset(15)"
+        />
+    <Label
+        field="wordLabel"
+        textColor="black"
+        font=":bold@40"
+        layout:centerX="super"
+        layout:below="actualActivity offset(30)"
+      />
+    <Label
+        field="timer"
+        font=":bold@30"
+        textColor="black"
+        layout:centerX="super"
+        layout:below="actualActivity offset(130)"
+        />
+    <Container
+          layout:centerX="super"
+          layout:trailing=":gt super inset(35)"
+          layout:fillVertically="super">
+
+        <Button
+            field="button3Points"
+            title="Three"
+            layout:below="actualActivity offset(70)"
+            layout:leading="super offset(15)"
+            style="BlueButton"
+            layout:height="90"
+            layout:width="70"
+            />
+        <Button
+            field="button4Points"
+            title="Four"
+            layout:top="button3Points"
+            layout:after="button3Points offset(35)"
+            style="BlueButton"
+            layout:height="button3Points"
+            layout:width="button3Points" />
+        <Button
+            field="button5Points"
+            title="Five"
+            layout:after="button4Points offset(35)"
+            layout:top="button4Points"
+            layout:trailing="super inset(15)"
+            style="BlueButton"
+            layout:height="button3Points"
+            layout:width="button3Points" />
+    </Container>
+
+    <Button
+        field="startButton"
+        title="START"
+        style="BlueButton"
+        layer.cornerRadius="20"
+        layout:centerX="super"
+        layout:height="60"
+        layout:width="190"
+        layout:below="button4Points offset(50)"
+        backgroundColor="blue" />
+
+    <Button
+        field="correctButton"
+        title="Correct"
+        font=""
+        layout:bottom="incorrectButton"
+        layout:left="super inset(30)"
+        backgroundColor="#29a329"
+        layout:height="50"
+        layout:width="100"
+        style="BlueButton"/>
+
+      <Button
+        field="incorrectButton"
+        title="Incorrect"
+        textColor="white"
+        font=":bold@50"
+        layout:right="super inset(30)"
+        backgroundColor="red"
+        layout:bottom="super inset(30)"
+        style="BlueButton"
+        layout:height="50"
+        layout:width="100" />
+
+</Component>

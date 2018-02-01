@@ -31,9 +31,9 @@ final class GameRootView: ViewBase<GameRootViewState, GameActions> {
     let name = UILabel()
     let wordLabel = UILabel()
     let actualActivity = UILabel()
-    let button3Points = UIButton()
-    let button4Points = UIButton()
-    let button5Points = UIButton()
+    let button3Points = UIButton(title: "3").styled(using: Styles.buttonTitle)
+    let button4Points = UIButton(title: "4").styled(using: Styles.buttonTitle)
+    let button5Points = UIButton(title: "5").styled(using: Styles.buttonTitle)
     let correctButton = UIButton()
     let incorrectButton = UIButton()
     let timer = UILabel()
@@ -91,5 +91,11 @@ final class GameRootView: ViewBase<GameRootViewState, GameActions> {
 
     override func loadView() {
         actualActivity.text = activity
+    }
+}
+
+extension GameRootView.Styles {
+    static func buttonTitle(button: UIButton) {
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 42, weight: .bold)
     }
 }

@@ -9,12 +9,15 @@
 
     <styles>
         <ButtonStyle
-            name="BlueButton"
-            layer.cornerRadius="5"
-            clipsToBounds="true"
-            backgroundColor="darkGray"
-            />
+        name="BlueButton"
+        layer.cornerRadius="15"
+        clipsToBounds="true"
+        backgroundColor="darkGray" />
     </styles>
+
+    <ImageView
+        image="background"
+        layout:edges="super" />
 
     <View
         backgroundColor="#e6e6e6"
@@ -27,60 +30,58 @@
         font=":bold@30"
         textColor="black"
         layout:top="super offset(8)"
-        layout:centerX="super"
-        />
+        layout:centerX="super" />
+
     <Label
         field="actualActivity"
         textColor="black"
         font=":bold@28"
         layout:centerX="super"
-        layout:below="name offset(15)"
-        />
+        layout:below="name offset(15)" />
+
     <Label
         field="wordLabel"
         textColor="black"
         font=":bold@40"
         layout:centerX="super"
-        layout:below="actualActivity offset(30)"
-      />
+        layout:below="actualActivity offset(30)" />
+
     <Label
         field="timer"
         font=":bold@30"
         textColor="black"
         layout:centerX="super"
-        layout:below="actualActivity offset(130)"
-        />
-    <Container
-          layout:centerX="super"
-          layout:trailing=":gt super inset(35)"
-          layout:fillVertically="super">
+        layout:below="actualActivity offset(130)" />
 
-        <Button
-            field="button3Points"
-            title="Three"
-            layout:below="actualActivity offset(70)"
-            layout:leading="super offset(15)"
-            style="BlueButton"
-            layout:height="90"
-            layout:width="70"
-            />
-        <Button
-            field="button4Points"
-            title="Four"
-            layout:top="button3Points"
-            layout:after="button3Points offset(35)"
-            style="BlueButton"
-            layout:height="button3Points"
-            layout:width="button3Points" />
-        <Button
-            field="button5Points"
-            title="Five"
-            layout:after="button4Points offset(35)"
-            layout:top="button4Points"
-            layout:trailing="super inset(15)"
-            style="BlueButton"
-            layout:height="button3Points"
-            layout:width="button3Points" />
+    <Container
+        layout:centerX="super"
+        layout:trailing=":gt super inset(35)"
+        layout:fillVertically="super" >
+
+    <Button
+        field="button3Points"
+        layout:below="actualActivity offset(70)"
+        layout:leading="super offset(15)"
+        style="BlueButton"
+        layout:height="90"
+        layout:width="70" />
+
+    <Button
+        field="button4Points"
+        layout:top="button3Points"
+        layout:after="button3Points offset(35)"
+        style="BlueButton"
+        layout:height="button3Points"
+        layout:width="button3Points" />
+
+    <Button
+        field="button5Points"
+        layout:after="button4Points offset(35)"
+        layout:top="button4Points"
+        layout:trailing="super inset(15)"
+        style="BlueButton"
+        layout:height="button3Points"
+        layout:width="button3Points" />
     </Container>
 
     <Button
@@ -103,9 +104,9 @@
         backgroundColor="#29a329"
         layout:height="50"
         layout:width="100"
-        style="BlueButton"/>
+        style="BlueButton" />
 
-      <Button
+    <Button
         field="incorrectButton"
         title="Incorrect"
         textColor="white"

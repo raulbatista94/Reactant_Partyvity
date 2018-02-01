@@ -223,9 +223,13 @@ extension GameRootView: ReactantUI {
                 return false
             }
             #else
-            let temp_View_1 = UIView()
-            temp_View_1.backgroundColor = UIColor(red: 0.901960784313726, green: 0.901960784313726, blue: 0.901960784313726, alpha: 1.0)
-            target.addSubview(temp_View_1)
+            let temp_ImageView_1 = UIImageView()
+            temp_ImageView_1.image = UIImage(named: "background")
+            target.addSubview(temp_ImageView_1)
+            
+            let temp_View_2 = UIView()
+            temp_View_2.backgroundColor = UIColor(red: 0.901960784313726, green: 0.901960784313726, blue: 0.901960784313726, alpha: 1.0)
+            target.addSubview(temp_View_2)
             
             target.name.textColor = UIColor.black
             target.name.font = UIFont.systemFont(ofSize: 30.0, weight: UIFont.Weight.bold)
@@ -243,20 +247,17 @@ extension GameRootView: ReactantUI {
             target.timer.font = UIFont.systemFont(ofSize: 30.0, weight: UIFont.Weight.bold)
             target.addSubview(target.timer)
             
-            let temp_Container_2 = ContainerView()
-            target.addSubview(temp_Container_2)
+            let temp_Container_3 = ContainerView()
+            target.addSubview(temp_Container_3)
             
             target.button3Points.apply(style: Styles.BlueButton)
-            target.button3Points.setTitle("Three", for: [])
-            temp_Container_2.addSubview(target.button3Points)
+            temp_Container_3.addSubview(target.button3Points)
             
             target.button4Points.apply(style: Styles.BlueButton)
-            target.button4Points.setTitle("Four", for: [])
-            temp_Container_2.addSubview(target.button4Points)
+            temp_Container_3.addSubview(target.button4Points)
             
             target.button5Points.apply(style: Styles.BlueButton)
-            target.button5Points.setTitle("Five", for: [])
-            temp_Container_2.addSubview(target.button5Points)
+            temp_Container_3.addSubview(target.button5Points)
             
             target.startButton.apply(style: Styles.BlueButton)
             target.startButton.layer.cornerRadius = 20.0
@@ -274,7 +275,14 @@ extension GameRootView: ReactantUI {
             target.incorrectButton.setTitle("Incorrect", for: [])
             target.addSubview(target.incorrectButton)
             
-            temp_View_1.snp.makeConstraints {
+            temp_ImageView_1.snp.makeConstraints {
+                make in
+                make.left.equalTo(target)
+                make.right.equalTo(target)
+                make.top.equalTo(target)
+                make.bottom.equalTo(target)
+            }
+            temp_View_2.snp.makeConstraints {
                 make in
                 make.left.equalTo(target)
                 make.right.equalTo(target)
@@ -301,7 +309,7 @@ extension GameRootView: ReactantUI {
                 make.centerX.equalTo(target)
                 make.top.equalTo(target.actualActivity.snp.bottom).offset(130.0)
             }
-            temp_Container_2.snp.makeConstraints {
+            temp_Container_3.snp.makeConstraints {
                 make in
                 make.centerX.equalTo(target)
                 make.trailing.greaterThanOrEqualTo(target).offset(-35.0)
@@ -312,7 +320,7 @@ extension GameRootView: ReactantUI {
                 make in
                 make.top.equalTo(target.actualActivity.snp.bottom).offset(70.0)
                 make.height.equalTo(90.0)
-                make.leading.equalTo(temp_Container_2).offset(15.0)
+                make.leading.equalTo(temp_Container_3).offset(15.0)
                 make.width.equalTo(70.0)
             }
             target.button4Points.snp.makeConstraints {
@@ -327,7 +335,7 @@ extension GameRootView: ReactantUI {
                 make.width.equalTo(target.button3Points)
                 make.height.equalTo(target.button3Points)
                 make.top.equalTo(target.button4Points)
-                make.trailing.equalTo(temp_Container_2).offset(-15.0)
+                make.trailing.equalTo(temp_Container_3).offset(-15.0)
                 make.leading.equalTo(target.button4Points.snp.trailing).offset(35.0)
             }
             target.startButton.snp.makeConstraints {
@@ -366,7 +374,7 @@ extension GameRootView: ReactantUI {
     }
     struct Styles {
         static func BlueButton(_ view: UIButton) {
-            view.layer.cornerRadius = 5.0
+            view.layer.cornerRadius = 15.0
             view.setBackgroundColor(UIColor.darkGray, for: [])
             view.clipsToBounds = true
         }

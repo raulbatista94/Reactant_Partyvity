@@ -34,10 +34,10 @@ final class GameRootView: ViewBase<GameRootViewState, GameActions> {
     let button3Points = UIButton(title: "3").styled(using: Styles.buttonTitle)
     let button4Points = UIButton(title: "4").styled(using: Styles.buttonTitle)
     let button5Points = UIButton(title: "5").styled(using: Styles.buttonTitle)
-    let correctButton = UIButton()
-    let incorrectButton = UIButton()
+    let correctButton = UIButton().styled(using: Styles.answerButtons)
+    let incorrectButton = UIButton().styled(using: Styles.answerButtons)
     let timer = UILabel()
-    let startButton = UIButton()
+    let startButton = UIButton().styled(using: Styles.answerButtons)
 
     private let team: Team
     private let activity: String
@@ -97,5 +97,8 @@ final class GameRootView: ViewBase<GameRootViewState, GameActions> {
 extension GameRootView.Styles {
     static func buttonTitle(button: UIButton) {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 42, weight: .bold)
+    }
+    static func answerButtons(button: UIButton) {
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 35, weight: .bold)
     }
 }

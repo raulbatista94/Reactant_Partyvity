@@ -102,24 +102,22 @@
     <Button
         field="correctButton"
         title="Correct"
-        font=""
-        layout:bottom="incorrectButton"
-        layout:left="super inset(30)"
-        backgroundColor="#5c01c4"
+        backgroundColor="#23d19f"
+        layout:centerX="super"
+        layout:below="timer offset(20)"
         layout:height="50"
-        layout:width="100"
+        layout:width="super inset(30)"
         style="BlueButton" />
 
     <Button
         field="incorrectButton"
         title="Incorrect"
-        textColor="white"
         font=":bold"
-        layout:right="super inset(30)"
         backgroundColor="#ce0a8d"
+        layout:centerX="super"
         layout:bottom="super inset(30)"
         style="BlueButton"
         layout:height="50"
-        layout:width="100" />
+        layout:width="super inset(80)" />
 
 </Component>

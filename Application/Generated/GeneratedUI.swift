@@ -288,7 +288,7 @@ extension GameRootView: ReactantUI, RootView {
             target.addSubview(target.startButton)
             
             target.correctButton.apply(style: Styles.BlueButton)
-            target.correctButton.setBackgroundColor(UIColor(red: 0.36078431372549, green: 0.00392156862745098, blue: 0.768627450980392, alpha: 1.0), for: [])
+            target.correctButton.setBackgroundColor(UIColor(red: 0.137254901960784, green: 0.819607843137255, blue: 0.623529411764706, alpha: 1.0), for: [])
             target.correctButton.setTitle("Correct", for: [])
             target.addSubview(target.correctButton)
             
@@ -369,17 +369,17 @@ extension GameRootView: ReactantUI, RootView {
             }
             target.correctButton.snp.makeConstraints {
                 make in
+                make.top.equalTo(target.timer.snp.bottom).offset(20.0)
+                make.centerX.equalTo(target)
                 make.height.equalTo(50.0)
-                make.bottom.equalTo(target.incorrectButton)
-                make.left.equalTo(target).offset(30.0)
-                make.width.equalTo(100.0)
+                make.width.equalTo(target).offset(-30.0)
             }
             target.incorrectButton.snp.makeConstraints {
                 make in
+                make.centerX.equalTo(target)
                 make.height.equalTo(50.0)
-                make.right.equalTo(target).offset(-30.0)
                 make.bottom.equalTo(target).offset(-30.0)
-                make.width.equalTo(100.0)
+                make.width.equalTo(target).offset(-80.0)
             }
             #endif
         }

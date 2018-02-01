@@ -18,7 +18,12 @@ final class TeamCell: ViewBase<Team, Void>, Reactant.TableViewCell {
 
 
     override func update() {
-        icon.text = "👥"
+
+        if componentState.score < 60 {
+            icon.text = "🎉"
+        } else {
+            icon.text = "🏆"
+        }
         name.text = componentState.name
         score.text = "Score: \(componentState.score)"
         round.text = "Round: \(componentState.rounds)"
@@ -36,10 +41,11 @@ final class TeamCell: ViewBase<Team, Void>, Reactant.TableViewCell {
 
 extension TeamCell.Styles {
     static func normalBackground(_ cell: TeamCell) {
-        cell.backgroundColor = nil
+        cell.backgroundColor = UIColor.white.withAlphaComponent(0.01)
     }
 
     static func highlightedBackground(_ cell: TeamCell) {
         cell.backgroundColor = UIColor.gray.withAlphaComponent(0.3)
     }
 }
+

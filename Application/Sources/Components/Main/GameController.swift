@@ -61,7 +61,7 @@ final class GameController: ControllerBase<(rounds: Int, gameState: GameState), 
             guard case .countingDown(let difficulty, _, _) = componentState.gameState else { return }
             if isCorrect {
                 dependencies.teamService.correctAnswer(id: properties.team.id, difficulty: difficulty)
-                if properties.team.score > 60 {
+                if properties.team.score >= 60 {
                     present(reactions.alreadyWinner(properties.team.name), animated: true)
                 }
             }

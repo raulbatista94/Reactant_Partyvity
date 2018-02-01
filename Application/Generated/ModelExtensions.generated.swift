@@ -1,4 +1,4 @@
-// MARK: - Torch entity extensions generated from file: Application/Sources/Models/Team.swift at 2018-02-01 10:21:23 +0000
+// MARK: - Torch entity extensions generated from file: Application/Sources/Models/Team.swift at 2018-02-01 17:37:20 +0000
 
 import Torch
 import RealmSwift

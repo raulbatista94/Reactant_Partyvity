@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "background.png",
+      "filename" : "dices_changed.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "dices_changed-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "dices_changed-2.png",
       "scale" : "3x"
     }
   ],

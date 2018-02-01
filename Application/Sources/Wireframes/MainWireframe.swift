@@ -47,7 +47,7 @@ final class MainWireframe: Wireframe {
 
     private func addUserAlert() -> (UIAlertController, Observable<String?>) {
         return create { provider, observer in
-            let alertController = UIAlertController(title: "Add new team", message: "Create new team", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Add new team", message: "Enter the name of the new team", preferredStyle: .alert)
 
             alertController.addTextField(configurationHandler: nil)
 

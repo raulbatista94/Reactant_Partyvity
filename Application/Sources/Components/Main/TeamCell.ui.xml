@@ -16,22 +16,26 @@
     <Label
         field="name"
         font=":bold@26"
-        textColor="#2952a3"
+        textColor="white"
         numberOfLines="1"
         layout:leading="icon offset(55)"
         layout:top="super inset(8)" />
 
     <Label
-      field="score"
-      layout:leading="icon offset(55)"
-      layout:below="name offset(4)"
-      layout:bottom="super inset(6)" />
+        field="score"
+        font=":bold"
+        textColor="white"
+        layout:leading="icon offset(55)"
+        layout:below="name offset(4)"
+        layout:bottom="super inset(6)" />
 
     <Label
-      field="round"
-      layout:leading="score offset(80)"
-      layout:trailing=":lt super"
-      layout:top="score"
-      layout:bottom="score" />
+        field="round"
+        font=":bold"
+        textColor="white"
+        layout:leading="score offset(80)"
+        layout:trailing=":lt super"
+        layout:top="score"
+        layout:bottom="score" />
 
 </Component>

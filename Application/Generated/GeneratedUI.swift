@@ -25,7 +25,7 @@ extension MainRootView: ReactantUI, RootView {
         #if (arch(i386) || arch(x86_64)) && (os(iOS) || os(tvOS))
         return ReactantLiveUIManager.shared.extendedEdges(of: self)
         #else
-        return []
+        return [UIRectEdge.all]
         #endif
     }
     
@@ -66,8 +66,19 @@ extension MainRootView: ReactantUI, RootView {
                 return false
             }
             #else
+            let temp_ImageView_1 = UIImageView()
+            temp_ImageView_1.image = UIImage(named: "background")
+            target.addSubview(temp_ImageView_1)
+            
             target.addSubview(target.teamTableView)
             
+            temp_ImageView_1.snp.makeConstraints {
+                make in
+                make.left.equalTo(target)
+                make.right.equalTo(target)
+                make.top.equalTo(target)
+                make.bottom.equalTo(target)
+            }
             target.teamTableView.snp.makeConstraints {
                 make in
                 make.left.equalTo(target)
@@ -136,12 +147,16 @@ extension TeamCell: ReactantUI {
             target.addSubview(target.icon)
             
             target.name.numberOfLines = 1
-            target.name.textColor = UIColor(red: 0.16078431372549, green: 0.32156862745098, blue: 0.63921568627451, alpha: 1.0)
+            target.name.textColor = UIColor.white
             target.name.font = UIFont.systemFont(ofSize: 26.0, weight: UIFont.Weight.bold)
             target.addSubview(target.name)
             
+            target.score.textColor = UIColor.white
+            target.score.font = UIFont.systemFont(ofSize: 15.0, weight: UIFont.Weight.bold)
             target.addSubview(target.score)
             
+            target.round.textColor = UIColor.white
+            target.round.font = UIFont.systemFont(ofSize: 15.0, weight: UIFont.Weight.bold)
             target.addSubview(target.round)
             
             target.icon.snp.makeConstraints {
@@ -162,8 +177,8 @@ extension TeamCell: ReactantUI {
             }
             target.round.snp.makeConstraints {
                 make in
-                make.leading.equalTo(target.score).offset(80.0)
                 make.top.equalTo(target.score)
+                make.leading.equalTo(target.score).offset(80.0)
                 make.bottom.equalTo(target.score)
                 make.trailing.lessThanOrEqualTo(target)
             }
@@ -184,7 +199,14 @@ extension TeamCell: ReactantUI {
     }
 }
 // Generated from /Users/raul/Desktop/reactant_activity/Application/Sources/Components/Main/GameRootView.ui.xml
-extension GameRootView: ReactantUI {
+extension GameRootView: ReactantUI, RootView {
+    var edgesForExtendedLayout: UIRectEdge {
+        #if (arch(i386) || arch(x86_64)) && (os(iOS) || os(tvOS))
+        return ReactantLiveUIManager.shared.extendedEdges(of: self)
+        #else
+        return [UIRectEdge.all]
+        #endif
+    }
     
     var rui: GameRootView.RUIContainer {
         return Reactant.associatedObject(self, key: &GameRootView.RUIContainer.associatedObjectKey) {
@@ -231,20 +253,20 @@ extension GameRootView: ReactantUI {
             temp_View_2.backgroundColor = UIColor(red: 0.901960784313726, green: 0.901960784313726, blue: 0.901960784313726, alpha: 1.0)
             target.addSubview(temp_View_2)
             
-            target.name.textColor = UIColor.black
+            target.name.textColor = UIColor.white
             target.name.font = UIFont.systemFont(ofSize: 30.0, weight: UIFont.Weight.bold)
             target.addSubview(target.name)
             
-            target.actualActivity.textColor = UIColor.black
+            target.actualActivity.textColor = UIColor.white
             target.actualActivity.font = UIFont.systemFont(ofSize: 28.0, weight: UIFont.Weight.bold)
             target.addSubview(target.actualActivity)
             
-            target.wordLabel.textColor = UIColor.black
+            target.wordLabel.textColor = UIColor.white
             target.wordLabel.font = UIFont.systemFont(ofSize: 40.0, weight: UIFont.Weight.bold)
             target.addSubview(target.wordLabel)
             
-            target.timer.textColor = UIColor.black
-            target.timer.font = UIFont.systemFont(ofSize: 30.0, weight: UIFont.Weight.bold)
+            target.timer.textColor = UIColor.white
+            target.timer.font = UIFont.systemFont(ofSize: 60.0, weight: UIFont.Weight.bold)
             target.addSubview(target.timer)
             
             let temp_Container_3 = ContainerView()
@@ -261,17 +283,17 @@ extension GameRootView: ReactantUI {
             
             target.startButton.apply(style: Styles.BlueButton)
             target.startButton.layer.cornerRadius = 20.0
-            target.startButton.setBackgroundColor(UIColor.blue, for: [])
+            target.startButton.setBackgroundColor(UIColor(red: 0.403921568627451, green: 0.0274509803921569, blue: 0.541176470588235, alpha: 1.0), for: [])
             target.startButton.setTitle("START", for: [])
             target.addSubview(target.startButton)
             
             target.correctButton.apply(style: Styles.BlueButton)
-            target.correctButton.setBackgroundColor(UIColor(red: 0.16078431372549, green: 0.63921568627451, blue: 0.16078431372549, alpha: 1.0), for: [])
+            target.correctButton.setBackgroundColor(UIColor(red: 0.36078431372549, green: 0.00392156862745098, blue: 0.768627450980392, alpha: 1.0), for: [])
             target.correctButton.setTitle("Correct", for: [])
             target.addSubview(target.correctButton)
             
             target.incorrectButton.apply(style: Styles.BlueButton)
-            target.incorrectButton.setBackgroundColor(UIColor.red, for: [])
+            target.incorrectButton.setBackgroundColor(UIColor(red: 0.807843137254902, green: 0.0392156862745098, blue: 0.552941176470588, alpha: 1.0), for: [])
             target.incorrectButton.setTitle("Incorrect", for: [])
             target.addSubview(target.incorrectButton)
             
@@ -292,7 +314,7 @@ extension GameRootView: ReactantUI {
             target.name.snp.makeConstraints {
                 make in
                 make.centerX.equalTo(target)
-                make.top.equalTo(target).offset(8.0)
+                make.top.equalTo(target).offset(100.0)
             }
             target.actualActivity.snp.makeConstraints {
                 make in
@@ -374,8 +396,9 @@ extension GameRootView: ReactantUI {
     }
     struct Styles {
         static func BlueButton(_ view: UIButton) {
+            view.showsTouchWhenHighlighted = true
             view.layer.cornerRadius = 15.0
-            view.setBackgroundColor(UIColor.darkGray, for: [])
+            view.setBackgroundColor(UIColor(red: 0.403921568627451, green: 0.0274509803921569, blue: 0.541176470588235, alpha: 1.0), for: [])
             view.clipsToBounds = true
         }
     }

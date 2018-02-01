@@ -4,7 +4,9 @@
     xmlns:layout="http://schema.reactant.tech/layout"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://schema.reactant.tech/ui https://schema.reactant.tech/ui.xsd
-    http://schema.reactant.tech/layout https://schema.reactant.tech/layout.xsd">
+    http://schema.reactant.tech/layout https://schema.reactant.tech/layout.xsd"
+    rootView="true"
+    extend="all">
 
 
     <styles>
@@ -12,7 +14,9 @@
         name="BlueButton"
         layer.cornerRadius="15"
         clipsToBounds="true"
-        backgroundColor="darkGray" />
+        backgroundColor="#67078a"
+        showsTouchWhenHighlighted="true" />
+
     </styles>
 
     <ImageView
@@ -28,28 +32,28 @@
     <Label
         field="name"
         font=":bold@30"
-        textColor="black"
-        layout:top="super offset(8)"
+        textColor="white"
+        layout:top="super offset(100)"
         layout:centerX="super" />
 
     <Label
         field="actualActivity"
-        textColor="black"
+        textColor="white"
         font=":bold@28"
         layout:centerX="super"
         layout:below="name offset(15)" />
 
     <Label
         field="wordLabel"
-        textColor="black"
+        textColor="white"
         font=":bold@40"
         layout:centerX="super"
         layout:below="actualActivity offset(30)" />
 
     <Label
         field="timer"
-        font=":bold@30"
-        textColor="black"
+        font=":bold@60"
+        textColor="white"
         layout:centerX="super"
         layout:below="actualActivity offset(130)" />
 
@@ -93,7 +97,7 @@
         layout:height="60"
         layout:width="190"
         layout:below="button4Points offset(50)"
-        backgroundColor="blue" />
+        backgroundColor="#67078a" />
 
     <Button
         field="correctButton"
@@ -101,7 +105,7 @@
         font=""
         layout:bottom="incorrectButton"
         layout:left="super inset(30)"
-        backgroundColor="#29a329"
+        backgroundColor="#5c01c4"
         layout:height="50"
         layout:width="100"
         style="BlueButton" />
@@ -110,9 +114,9 @@
         field="incorrectButton"
         title="Incorrect"
         textColor="white"
-        font=":bold@50"
+        font=":bold"
         layout:right="super inset(30)"
-        backgroundColor="red"
+        backgroundColor="#ce0a8d"
         layout:bottom="super inset(30)"
         style="BlueButton"
         layout:height="50"
